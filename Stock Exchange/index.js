@@ -32,6 +32,7 @@ btn.addEventListener("click", () => {
                 const header = card.querySelector(".header");
 
                 header.innerText = stock.name + "(" + stock.symbol + ")";
+                header.href = "./company.html?symbol" + stock.symbol
                 stockContainer.append(card);
                 // console.log(stock)
                 return { name: stock.name, symbol: stock.symbol, element: card };
