@@ -40,3 +40,26 @@
 .hide {
     display: none;
 }
+
+.company-page-header{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.company-name{
+    margin-top: 6rem;
+
+}
+
+#stock-status{
+    margin-left: 5rem;
+}
+.stock-status-percentage{
+    color: rgb(46, 167, 46);
+    
+}
+.company-page-body{
+    margin-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
