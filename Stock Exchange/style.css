@@ -4,16 +4,15 @@
 .search-wrapper {
     display: flex;
     flex-direction: row;
-    
 }
 
 .btn {
     width: 10%;
-    background-color: #FFF;
+    background-color: #fff;
     border-color: black;
 }
 
-.header{
+.header {
     text-decoration: none;
 }
 
@@ -24,10 +23,13 @@
 }
 
 .stocks {
+    display: flex;
+    justify-content: space-around;
     border-bottom: 1px solid black;
     background-color: white;
     padding: 0.5rem;
 }
+
 .data-stocks-container {
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
@@ -41,24 +43,22 @@
     display: none;
 }
 
-.company-page-header{
+.company-page-header {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
-.company-name{
+.company-name {
     margin-top: 6rem;
-
 }
 
-#stock-status{
+#stock-status {
     margin-left: 5rem;
 }
-.stock-status-percentage{
+.stock-status-percentage {
     color: rgb(46, 167, 46);
-    
 }
-.company-page-body{
+.company-page-body {
     margin-top: 2%;
     padding-left: 4%;
     padding-right: 4%;
