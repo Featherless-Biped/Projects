@@ -53,22 +53,3 @@ btn.addEventListener("click", () => {
             });
         });
 });
-
-async function openPage() {
-    let companyInfoFunction = 
-    fetch(companyInforURL + companySymbol)
-        .then((res) => res.json())
-        .then((data) => {
-            users = data.map((user) => {
-                const card =
-                    userCardTemplate.content.cloneNode(true).children[0];
-                const header = card.querySelector("[data-header]");
-                const body = card.querySelector("[data-body]");
-
-                header.textContent = user.name;
-                body.textContent = user.email;
-                userCardContainer.append(card);
-                return { name: user.name, email: user.email, element: card };
-            });
-        });
-}
