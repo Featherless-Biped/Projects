@@ -1,5 +1,4 @@
-const stockURL =
-    "https://financialmodelingprep.com/api/v3/financial-statement-symbol-lists?apikey=79a5113cccf7cd8ece0c25cbcc6af338";
+
 const firstURL =
     "https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/search?query=";
 const companyInforURL =
@@ -16,6 +15,7 @@ const companySymbol = urlParam.get("symbol");
 let stocks = [];
 let searchInput = "&limit=10&exchange=NASDAQ";
 let companyInfo = [];
+
 
 function addClassToElement(element, cssClass) {
     element.classList.add(cssClass);
@@ -83,6 +83,8 @@ btn.addEventListener("click", () => {
 
                             header.href =
                                 "./company.html?symbol=" + data.symbol;
+                                addClassToNumbers(companyCard.price, price)
+                                addClassToNumbers(companyCard.changesPercentage, percentageChange)
                             stockContainer.append(card);
                             addClassToElement(calcSpinner, "visually-hidden");
                         })
